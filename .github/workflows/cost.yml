@@ -48,7 +48,7 @@ jobs:
       - name: Post cost comment to PR
         env:
           INFRACOST_API_KEY: ${{ secrets.INFRACOST_API_KEY }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           infracost comment github \
             --path infracost.json \
